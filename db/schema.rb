@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_10_083520) do
+ActiveRecord::Schema.define(version: 2022_02_15_083750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,12 +20,10 @@ ActiveRecord::Schema.define(version: 2022_02_10_083520) do
     t.string "letter"
     t.bigint "question_id", null: false
     t.bigint "quiz_id", null: false
-    t.bigint "result_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["question_id"], name: "index_answers_on_question_id"
     t.index ["quiz_id"], name: "index_answers_on_quiz_id"
-    t.index ["result_id"], name: "index_answers_on_result_id"
   end
 
   create_table "beasts", force: :cascade do |t|
@@ -60,7 +58,6 @@ ActiveRecord::Schema.define(version: 2022_02_10_083520) do
 
   add_foreign_key "answers", "questions"
   add_foreign_key "answers", "quizzes"
-  add_foreign_key "answers", "results"
   add_foreign_key "questions", "quizzes"
   add_foreign_key "results", "beasts"
 end
