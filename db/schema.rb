@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_15_083750) do
+ActiveRecord::Schema.define(version: 2022_02_16_084401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2022_02_15_083750) do
     t.bigint "quiz_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "beast_id"
+    t.index ["beast_id"], name: "index_answers_on_beast_id"
     t.index ["question_id"], name: "index_answers_on_question_id"
     t.index ["quiz_id"], name: "index_answers_on_quiz_id"
   end
@@ -48,16 +50,8 @@ ActiveRecord::Schema.define(version: 2022_02_15_083750) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "results", force: :cascade do |t|
-    t.string "title"
-    t.bigint "beast_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["beast_id"], name: "index_results_on_beast_id"
-  end
-
+  add_foreign_key "answers", "beasts"
   add_foreign_key "answers", "questions"
   add_foreign_key "answers", "quizzes"
   add_foreign_key "questions", "quizzes"
-  add_foreign_key "results", "beasts"
 end
