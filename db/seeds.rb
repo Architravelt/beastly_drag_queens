@@ -20,39 +20,46 @@ Quiz.create!(
 
 Beast.create!(
   name: "Cougar",
+  animal: "puma",
   description: "Always on the prowl",
   explanation: "You love to eat young bucks for breakfast.
-  If breakfast is at midnight. slink and diamonds is all thw wardobe you need")
+  If breakfast is at midnight. slink and diamonds is all the wardobe you need")
 
 Beast.create!(
   name: "Swan princess",
+  animal: "swan",
   description: "Pure, sugar coated evil",
   explanation: "Precious, precocious and protected")
 
 # Blood red glider butterfly is also a good option or siamese fighting fish - Betta
 Beast.create!(
   name: "Strawberry Poison Delight",
+  animal: "frog",
   description: ,
   explanation: )
 
 Beast.create!(
   name: "Jungle Nymph",
+  animal: "stickinsect",
   description: "With legs all the way to there, no-one can catch you",
   explanation: )
 
 # Question 1.
 Question.create!(
   quiz_id: quiz.first.id,
+  name: "one",
   question: "What's your favourite colour?")
 
 # Question 2.
 Question.create!(
   quiz_id: quiz.first.id,
+  name: "two",
   question: "What's your favourite element?")
 
 # Question 3.
 Question.create!(
   quiz_id: quiz.first.id,
+  name: "three"
   question: "What's your favourite music genre?")
 
 # answers for question 1. What's your favourite colour?
