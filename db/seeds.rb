@@ -42,85 +42,33 @@ Beast.create!(
   name: "Jungle Nymph",
   animal: "stickinsect",
   description: "With legs all the way to there, no-one can catch you",
-  explanation: "You love to loom down on the competition")
+  explanation: "You love to look down on the competition")
 
-puma = Beast.find_by(animal: "puma").first.id
-frog = Beast.find_by(animal: "frog").first.id
-stickinsect = Beast.find_by(animal: "stickinsect").first.id
-swan = Beast.find_by(animal: "swan").first.id
+# the animals:
+
+puma = Beast.find_by(animal: "puma").id
+frog = Beast.find_by(animal: "frog").id
+stickinsect = Beast.find_by(animal: "stickinsect").id
+swan = Beast.find_by(animal: "swan").id
 
 # Question 1.
 Question.create!(
-  quiz_id: quiz.first.id,
+  quiz_id: Quiz.first.id,
   name: "one",
   question: "What's your favourite colour?")
 
-# answers for question 1. What's your favourite colour?
-Answer.create!(
-  letter: "A."
-  answer: "A: Blackest midnight of the soul"
-  beast_id: puma
-  question_id: question.first.id)
-
-Answer.create!(
-  letter: "B."
-  answer: "B: Tequila Sunrise"
-  beast_id: frog
-  question_id:question.first.id)
-
-Answer.create!(
-  letter: "C."
-  answer: "C: Poison Ivy"
-  beast_id: stickinsect
-  question_id: question.first.id)
-
-Answer.create!(
-  letter: "D."
-  answer: "D: Angel wings and unicorn's breath"
-  beast_id: swan
-  question_id: question.first.id)
-
 # Question 2.
 Question.create!(
-  quiz_id: quiz.first.id,
+  quiz_id: Quiz.first.id,
   name: "two",
   question: "What's your favourite element?")
 
-# Answers for question two, what's your favourite element
-Answer.create!(
-  letter: "A."
-  answer: "A: Earth"
-  :beast_id = Beast.find_by(animal: "puma").first.id
-  :question_id = Question.find by(name: "two").first.id
-
-Answer.create!(
-  letter: "B."
-  answer: "B: Air"
-  :beast_id = Beast.find_by(animal: "swan").first.id
-  :question_id = Question.find by(name: "two").first.id
-
-Answer.create!(
-  letter: "C."
-  answer: "C: Fire"
-  :beast_id = Beast.find_by(animal: "stickinsect").first.id
-  :question_id = Question.find by(name: "two").first.id
-
-Answer.create!(
-  letter: "D."
-  answer: "D: Water"
-  :beast_id = Beast.find_by(animal: "frog").first.id
-  :question_id = Question.find by(name: "two").first.id
+two = Question.find_by(name: "two").id
 
 # Question 3.
 Question.create!(
-  quiz_id: quiz.first.id,
-  name: "three"
-  question: "What's your favourite music genre?")
+  quiz_id: Quiz.first.id,
+  name: "three",
+  question: "What's your favourite music?")
 
-
-
-# :type_id => ProductType.where(:name => "Furniture").first.id
-# restaurant = Restaurant.find_by(name: "La Tour d'Argent")
-
-
-
+three = Question.find_by(name: "three").id
