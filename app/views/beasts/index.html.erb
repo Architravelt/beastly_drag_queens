@@ -1,0 +1,39 @@
+<div class="album-box">
+  <div class="d-flex justify-content-center">
+    <h1 id="beast-header">The Zoo</h1>
+  </div>
+
+
+
+  <div class="flex-container">
+    <% @beasts.each do |beast| %>
+      <div class="d-flex mb-4 flex-wrap">
+        <div class="card-beast">
+          <img src= <%= album.artwork_url %> />
+          <div class="card-vinyl-infos">
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li><h2><%= link_to "#{album.album_name}", album_path(album) %></h4></li>
+            <li><h3><%= album.artist.artist_name %></h3></li>
+            <li><p><%= album.year %></p></li>
+
+            <% album.genre[0..2].each do |genre| %>
+              <li><p><%= genre %></p></li>
+            <% end %>
+
+          </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+  <br>
+  <div><%= link_to 'Search again', root_path, class: "btn btn-primary ml-3" %></div>
+
+
+</div>
+
+<!-- cougar by Meg Jerrard on unsplash -->
+<!-- frog by Kobe Tang -->
+<!-- swan by Emily Sevenoaks -->
+<!-- insect by Dorothea OLDANI -->

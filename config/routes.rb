@@ -3,13 +3,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :beasts, only: [ :index, :show ]
 
-  resources :quizzes, only: [ :index, :show ] do
-    resources :questions, only: [ :index, ] do
-      resources :answers, only: [ :index ]
-    end
+  resources :questions, only: [ :index, :show ] do
+    resources :answers, only: [ :index ]
   end
 
-  resources :questions, only: [ :show ]
   resources :answers, only: [ :show ]
 
 end
