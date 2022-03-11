@@ -1,0 +1,45 @@
+.card-beast {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  // border: solid 2px #9b72aa;
+  position: relative;
+
+
+
+  // height: 500px;
+  background-color: $gray;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    font-family: raleway;
+  }
+
+  p {
+    font-family: helvetica;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.card-beast > img {
+  object-fit: scale-down;
+}
+
+.card-beast-infos {
+  padding: 8px 0;
+  background-color: white;
+  // height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

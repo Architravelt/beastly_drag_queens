@@ -1,0 +1,14 @@
+.beast-box {
+  max-width: 110rem;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 64px;
+  row-gap: 32px;
+  margin: 0 100px;
+}
