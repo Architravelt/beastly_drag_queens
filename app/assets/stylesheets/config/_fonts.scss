@@ -1,9 +1,9 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&family=Laila:wght@300;400;500;600;700&family=Seymour+One&display=swap');
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$headers-font: "Nunito", "Helvetica", 'Seymour One', 'Laila', 'El Messiri', "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,3 +14,19 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+// to specify the fonts
+// font-family: 'El Messiri', sans-serif;
+// font-family: 'Laila', sans-serif;
+// font-family: 'Seymour One', sans-serif;
+
+
+#beast-header {
+  color: #3E065F;
+  background-color: #4FBDBA;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-family: 'Seymour One';
+  font-size: 4rem;
+}

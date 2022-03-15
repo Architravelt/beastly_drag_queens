@@ -1,23 +1,23 @@
 <div class="beast-box">
   <div class="d-flex justify-content-center">
-    <h1 id="beast-header">The Zoo</h1>
+    <h1 id="beast-header">It's A Zoo Out There!</h1>
   </div>
 
 
 
   <div class="flex-container">
     <% @beasts.each do |beast| %>
-      <!-- <div class="d-flex mb-4 flex-wrap"> -->
+      <div class="d-flex mb-4 flex-wrap">
         <div class="card-beast">
           <img src= <%= image_path('frog.jpg')%> >
           <div class="card-beast-infos">
           <ul style="list-style: none; margin: 0; padding: 0;">
             <li><h2><%= link_to "#{beast.name}", beast_path(beast) %></h4></li>
             <li><h3><%= beast.description %></h3></li>
-            <li><p><%= beast.explanation %></p></li>
+            <!-- <li><p><%= beast.explanation %></p></li> -->
           </ul>
           </div>
-        <!-- </div> -->
+        </div>
       </div>
     <% end %>
 
