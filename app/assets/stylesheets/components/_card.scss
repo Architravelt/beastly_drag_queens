@@ -17,6 +17,10 @@
   flex-direction: column;
   text-align: center;
 
+  h3 {
+    color: white;
+  }
+
   h2 {
     font-family: raleway;
   }
@@ -26,7 +30,7 @@
   }
 
   a {
-    color: $plum;
+    color: $rich;
     font-family: 'Laila', sans-serif;
     text-decoration: none;
   }
@@ -38,6 +42,7 @@
 
 .card-beast > img {
   object-fit: scale-down;
+  height: 250px;
 }
 
 .card-beast-infos {
