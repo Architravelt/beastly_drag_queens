@@ -23,26 +23,30 @@ Beast.create!(
   animal: "puma",
   description: "Always on the prowl",
   explanation: "You eat young bucks for breakfast.
-  If breakfast is at midnight. Slink and diamonds is all the wardobe you need")
+  If breakfast is at midnight. Slink and diamonds is all the wardobe you need",
+  picture: 'cougar.jpg')
 
 Beast.create!(
   name: "Swan princess",
   animal: "swan",
   description: "Pure, sugar coated evil",
-  explanation: "Precious, precocious and protected")
+  explanation: "Precious, precocious and protected",
+  picture: 'swan.jpg')
 
 # Blood red glider butterfly is also a good option or siamese fighting fish - Betta
 Beast.create!(
   name: "Strawberry Poison Delight",
   animal: "frog",
   description: "Vibrant venom on webbed feet",
-  explanation: "You live to slay the competition")
+  explanation: "You live to slay the competition",
+  picture: 'frog.jpg')
 
 Beast.create!(
   name: "Jungle Nymph",
   animal: "stickinsect",
   description: "With legs all the way to there, no-one can catch you",
-  explanation: "You love to look down on the competition")
+  explanation: "You love to look down on the competition",
+  picture: 'nymph.jpg')
 
 # ID's for the animals:
 
