@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #4FBDBA;
+  background-color: #4FBDBA;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +9,33 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+
+.navbar-queens {
+  height: 100px;
+  // position: fixed;
+  background-color: #4FBDBA;
+}
+
+.navbar-queens ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+
+}
+
+// .navbar-queens li {
+//   display: inline;
+// }
+
+.navbar-queens h1 {
+  font-family: laila;
+  color: $rich;
+}
+
+.navbar-queens h3 {
+  font-family: nunito;
+  color: white;
 }
