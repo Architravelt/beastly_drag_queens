@@ -133,13 +133,13 @@ Answer.create!(
   letter: "A.",
   answer: "A: Death Metal",
   beast_id: puma,
-  question_id: two)
+  question_id: three)
 
 Answer.create!(
   letter: "B.",
   answer: "B: Tchaikovsky",
   beast_id: swan,
-  question_id: two)
+  question_id: three)
 
 Answer.create!(
   letter: "C.",
@@ -151,4 +151,4 @@ Answer.create!(
   letter: "D.",
   answer: "D: Hip Hop",
   beast_id: frog,
-  question_id: two)
+  question_id: three)

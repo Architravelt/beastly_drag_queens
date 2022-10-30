@@ -1,0 +1,10 @@
+
+<p> <%=@question.name %> </p>
+<p> <%=@question.question %> </p>
+
+
+<!-- <p> <%= %> </p> -->
+<% @question.answers.each do |answer| %>
+  <p> <%= answer.answer%> </p>
+<% end %>
+
