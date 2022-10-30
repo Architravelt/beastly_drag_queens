@@ -1,10 +1,15 @@
 
-<p> <%=@question.name %> </p>
+<p>Question <%=  @question.name %> </p>
 <p> <%=@question.question %> </p>
 
 
-<!-- <p> <%= %> </p> -->
+<!-- <p> </p> -->
 <% @question.answers.each do |answer| %>
   <p> <%= answer.answer%> </p>
 <% end %>
 
+<%if @question.name == "three" %>
+  <button><%=link_to  "Find my diva beast! #{}", beast_path(45) %>   </button>
+<% else %>
+  <button><%=link_to  "next question #{}", question_path(@question.id.next) %>   </button>
+<% end%>
