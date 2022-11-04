@@ -53,13 +53,18 @@
 }
 
 .card-quiz {
-  height: 200px;
-  width: 500px;
+  height: 400px;
+  width: 700px;
   background-color: $orange;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
 
 }
-card-quiz h1 {
-  font-family: laila;
+.card-quiz h1 {
+  font-family: Nunito;
+  font-size: 4em;
 }
 

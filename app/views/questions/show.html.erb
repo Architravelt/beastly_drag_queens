@@ -8,6 +8,9 @@
   <p> <%= answer.answer%> </p>
 <% end %>
 
+<!--%= collection_radio_buttons( Answer.all, :letter, :answer, )%-->
+
+
 <%if @question.name == "three" %>
   <button><%=link_to  "Find my diva beast! #{}", beast_path(45) %>   </button>
 <% else %>

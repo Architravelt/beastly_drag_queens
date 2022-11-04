@@ -11,3 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// general styling
+* {
+  box-sizing: border-box;
+  margin: 0;
+}

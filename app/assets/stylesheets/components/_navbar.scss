@@ -14,8 +14,14 @@
 
 .navbar-queens {
   height: 100px;
-  // position: fixed;
+  position: fixed;
+  top: 20px;
   background-color: #4FBDBA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  width: 100%;
 }
 
 .navbar-queens ul {
@@ -26,16 +32,38 @@
 
 }
 
-// .navbar-queens li {
-//   display: inline;
-// }
-
-.navbar-queens h1 {
-  font-family: laila;
-  color: $rich;
+.navbar-queens li {
+  display: inline-block;
+  // padding-top: 20px;
 }
 
-.navbar-queens h3 {
+#nav-logo {
+  font-family: laila;
+  color: $rich;
+  margin-left: 15px;
+  font-size: 2.75rem;
+
+}
+
+#nav-text {
   font-family: nunito;
   color: white;
+  font-size: 2rem;
+  font-style: italic;
+  position: absolute;
+  right: 272px;
+  top: 24px;
+}
+
+.nav-btn{
+  color: white;
+  font-family: nunito;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: $indigo;
+  position: absolute;
+  right: 40px;
+  top: 24px;
+  font-weight: bold;
 }
