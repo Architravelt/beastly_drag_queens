@@ -52,17 +52,30 @@
   align-items: center;
 }
 
-.card-quiz {
-  height: 400px;
-  width: 700px;
-  background-color: $orange;
+.card-quiz, .card-question {
+  height: 60vh;
+  // width: 50vw;
   color: white;
   display: flex;
   justify-content: space-around;
   text-align: center;
   align-items: center;
-
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  margin-top: 200px;
+  padding: 24px;
 }
+
+.card-quiz {
+  background-color: $yellow;
+}
+
+.card-question {
+  background-color: $orange;
+  flex-wrap: wrap;
+  font-size: 2em;
+}
+
 .card-quiz h1 {
   font-family: Nunito;
   font-size: 4em;

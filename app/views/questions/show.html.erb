@@ -1,18 +1,27 @@
 
-<p>Question <%=  @question.name %> </p>
-<p> <%=@question.question %> </p>
 
 
-<!-- <p> </p> -->
-<% @question.answers.each do |answer| %>
-  <p> <%= answer.answer%> </p>
-<% end %>
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <div class="card-question">
+        <p>Question <%=  @question.name %> </p>
+        <p> <%=@question.question %> </p>
 
-<!--%= collection_radio_buttons( Answer.all, :letter, :answer, )%-->
+
+        <!-- <p> </p> -->
+        <% @question.answers.each do |answer| %>
+          <p> <%= answer.answer%> </p>
+        <% end %>
+
+        <!--%= collection_radio_buttons( Answer.all, :letter, :answer, )%-->
 
 
-<%if @question.name == "three" %>
-  <button><%=link_to  "Find my diva beast! #{}", beast_path(45) %>   </button>
-<% else %>
-  <button><%=link_to  "next question #{}", question_path(@question.id.next) %>   </button>
-<% end%>
+        <%if @question.name == "three" %>
+          <button><%=link_to  "Find my diva beast! #{}", beast_path(45) %>   </button>
+        <% else %>
+          <button><%=link_to  "next question #{}", question_path(@question.id.next) %>   </button>
+        <% end%>
+
+    </div>
+  </div>
+</div>
