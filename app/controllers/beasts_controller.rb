@@ -6,4 +6,10 @@ class BeastsController < ApplicationController
   def show
     @beast = Beast.find(params[:id])
   end
+
+  def selection
+
+
+  end
+
 end
