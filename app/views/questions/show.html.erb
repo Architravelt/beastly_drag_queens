@@ -17,10 +17,12 @@
 
 
         <%if @question.name == "three" %>
-          <button><%=link_to  "Find my diva beast! #{}", beast_path(45) %>   </button>
+          <button><%=link_to  "Find my diva beast! #{}", beast_path(Beast.first) %>   </button>
         <% else %>
           <button><%=link_to  "next question #{}", question_path(@question.id.next) %>   </button>
         <% end%>
+
+
 
     </div>
   </div>
