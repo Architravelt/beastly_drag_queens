@@ -1,0 +1,4 @@
+2022-11-16 10:42:29.890 GMT [40123] FATAL:  lock file "postmaster.pid" already exists
+2022-11-16 10:42:29.890 GMT [40123] HINT:  Is another postmaster (PID 40078) running in data directory "/usr/local/var/postgres"?
+2022-11-16 10:45:54.113 GMT [40271] FATAL:  lock file "postmaster.pid" already exists
+2022-11-16 10:45:54.113 GMT [40271] HINT:  Is another postmaster (PID 40078) running in data directory "/usr/local/var/postgres"?
