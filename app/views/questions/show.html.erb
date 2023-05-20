@@ -9,13 +9,27 @@
 
 
         <!-- <p> </p> -->
-        <% @question.answers.each do |answer| %>
-          <p> <%= answer.answer%> </p>
+        <!-- <!% @question.answers.each do |answer| %>
+          <p> <!%= answer.answer%> </p>
+        <!% end %> -->
+
+
+<% %>
+
+        <%  form_for @question.question do |f| %>
+          <% f.collection_radio_buttons :options, [[true, 'Yes'] ,[false, 'No']], :first, :last %>
         <% end %>
 
+        <input id="user_options_true" name="user[options]" type="radio" value="true" />
+        <label class="collection_radio" for="user_options_true">Yes</label>
+        <input id="user_options_false" name="user[options]" type="radio" value="false" />
+        <label class="collection_radio" for="user_options_false">No</label>
 
+        <% @question.answers.each do |answer| %>
+          <input type="radio" >
+          <label for="user_options_true"><%= answer.answer%></label>
 
-
+        <% end %>
 
         <!--%= collection_radio_buttons( Answer.all, :letter, :answer, )%-->
 
