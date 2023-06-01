@@ -143,12 +143,12 @@ Answer.create!(
 
 Answer.create!(
   letter: "C.",
-  answer: "C: Jungle",
+  answer: "C: Disco",
   beast_id: stickinsect,
   question_id: three)
 
 Answer.create!(
   letter: "D.",
-  answer: "D: Trip Hop",
+  answer: "D: Hip Hop",
   beast_id: frog,
   question_id: three)

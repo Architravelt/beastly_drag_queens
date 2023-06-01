@@ -1,10 +1,10 @@
 class QuizzesController < ApplicationController
 
-  def bdqQuiz
-    @bdq_questions = Question.all
+  def choices
+    @questions = Question.all
     @emptyChoices = []
 
-    Question.all.each do
+    @questions.each do
       @emptyChoices << Choice.new
     end
   end
