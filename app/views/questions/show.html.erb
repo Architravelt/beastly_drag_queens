@@ -9,22 +9,25 @@
 
 
         <!-- <p> </p> -->
-        <!-- <!% @question.answers.each do |answer| %>
-          <p> <!%= answer.answer%> </p>
-        <!% end %> -->
+
 
 
 <% %>
 
+<!--
+        </%  simple_form_for @question do |f| %>
+          </% @question.answers.each do |answer| %>
+            </% f.input :choice, as: :radio_button label: "#{answer.answer}" %>
+          </% end %>
+          </% f.submit class: "btn btn-quiz-box" %>
+        </% end %> -->
 
-        <%  simple_form_for @question do |f| %>
 
-        <% end %>
         <% @question.answers.each do |answer| %>
           <ul style="list-style: none; margin: 0; padding: 0;">
             <li>
             <input id="#{answer.beast_id}" name="answers" type="radio" value="#{answer.beast_id}">
-            <label for="#{answer.beast_id}"><%= answer.answer%></label>
+            <label for="#{answer.beast_id}"><%= answer.answer %></label>
             </li>
           </ul>
         <% end %>
