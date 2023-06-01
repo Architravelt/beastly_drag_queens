@@ -16,6 +16,7 @@
 
 <% %>
 
+
         <%  form_for @question.question do |f| %>
           <% f.collection_radio_buttons :options, [[true, 'Yes'] ,[false, 'No']], :first, :last %>
         <% end %>
@@ -26,9 +27,12 @@
         <label class="collection_radio" for="user_options_false">No</label>
 
         <% @question.answers.each do |answer| %>
-          <input type="radio" >
-          <label for="user_options_true"><%= answer.answer%></label>
-
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li>
+            <input type="radio" >
+            <label for="user_options_true"><%= answer.answer%></label>
+            </li>
+          </ul>
         <% end %>
 
         <!--%= collection_radio_buttons( Answer.all, :letter, :answer, )%-->

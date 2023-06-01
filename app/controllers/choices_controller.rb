@@ -1,6 +1,7 @@
 
 
 def create
+
   params["choices"].each do |key, value|
     @choice = Choice.create(choice_params(value))
 end
