@@ -106,7 +106,7 @@ Answer.create!(
 Answer.create!(
   letter: "A.",
   answer: "A: Earth",
-  beast_id: puma,
+  beast_id: stickinsect,
   question_id: two)
 
 Answer.create!(
@@ -118,7 +118,7 @@ Answer.create!(
 Answer.create!(
   letter: "C.",
   answer: "C: Fire",
-  beast_id: stickinsect,
+  beast_id: puma,
   question_id: two)
 
 Answer.create!(
@@ -143,12 +143,12 @@ Answer.create!(
 
 Answer.create!(
   letter: "C.",
-  answer: "C: Disco",
+  answer: "C: Jungle",
   beast_id: stickinsect,
   question_id: three)
 
 Answer.create!(
   letter: "D.",
-  answer: "D: Hip Hop",
+  answer: "D: Trip Hop",
   beast_id: frog,
   question_id: three)
