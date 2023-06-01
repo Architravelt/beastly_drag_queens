@@ -61,6 +61,8 @@ Question.create!(
   name: "one",
   question: "What's your favourite colour?")
 
+one = Question.find_by(name: "one").id
+
 # Question 2.
 Question.create!(
   quiz_id: Quiz.first.id,
