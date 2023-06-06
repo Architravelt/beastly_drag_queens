@@ -22,15 +22,23 @@
           </% f.submit class: "btn btn-quiz-box" %>
         </% end %> -->
 
+        <%= form_with url: question_choices_path(@question.id), local:true, method: :post do  %>
+          <div class="answers">
+            <% @question.answers.each do |answer| %>
+              <%= radio_button_tag "answer", "#{answer.beast_id}", false %>
+              <%= label_tag "#{answer.beast_id}", answer.answer%>
+            <% end %>
+            <%if @question.name == "three" %>
+            <%= submit_tag "Find my diva beast! #{}"%>
+            <% else %>
+            <%= submit_tag "next question #{}"%>
+            <% end%>
+          </div>
 
-        <% @question.answers.each do |answer| %>
-          <ul style="list-style: none; margin: 0; padding: 0;">
-            <li>
-            <input id="#{answer.beast_id}" name="answers" type="radio" value="#{answer.beast_id}">
-            <label for="#{answer.beast_id}"><%= answer.answer %></label>
-            </li>
-          </ul>
         <% end %>
+
+
+
 
 
 
