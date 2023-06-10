@@ -13,19 +13,13 @@
 
 
 <% %>
+<%= %>
 
-<!--
-        </%  simple_form_for @question do |f| %>
-          </% @question.answers.each do |answer| %>
-            </% f.input :choice, as: :radio_button label: "#{answer.answer}" %>
-          </% end %>
-          </% f.submit class: "btn btn-quiz-box" %>
-        </% end %> -->
 
-        <%= form_with url: question_choices_path(@question.id), local:true, method: :post do  %>
+        <%= form_with model: @question, local:true, method: :patch do  %>
           <div class="answers">
             <% @question.answers.each do |answer| %>
-              <%= radio_button_tag "answer", "#{answer.beast_id}", false %>
+              <%= radio_button_tag "answer", "#{answer.beast_id}", false, required: 'required' %>
               <%= label_tag "#{answer.beast_id}", answer.answer%>
             <% end %>
             <%if @question.name == "three" %>
@@ -34,7 +28,6 @@
             <%= submit_tag "next question #{}"%>
             <% end%>
           </div>
-
         <% end %>
 
 
