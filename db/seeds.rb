@@ -59,6 +59,8 @@ swan = Beast.find_by(animal: "swan").id
 Question.create!(
   quiz_id: Quiz.first.id,
   name: "one",
+  selection: "",
+  counter: 0,
   question: "What's your favourite colour?")
 
 one = Question.find_by(name: "one").id
@@ -67,6 +69,8 @@ one = Question.find_by(name: "one").id
 Question.create!(
   quiz_id: Quiz.first.id,
   name: "two",
+  selection: "",
+  counter: 0,
   question: "What's your favourite element?")
 
 two = Question.find_by(name: "two").id
@@ -75,6 +79,8 @@ two = Question.find_by(name: "two").id
 Question.create!(
   quiz_id: Quiz.first.id,
   name: "three",
+  selection: "",
+  counter: 0,
   question: "What's your favourite music?")
 
 three = Question.find_by(name: "three").id

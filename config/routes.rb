@@ -10,12 +10,13 @@ Rails.application.routes.draw do
 
   resources :answers, only: [ :show ]
   resources :choices, only: [ :index ]
+  resources :questions, only: [ :update ]
 
 end
 
 # quizzes - theoretically can only see the one quiz, but were there more, we could see all.
 # beasts - we can see a beast, we can see all beasts
-# questions - we can see a question, we can see all questions
+# questions - we can see a question, we can see all questions, we can update a question
 # answers - we can see an answer, we can see all answers
 # choices - a choice is created for each set of answers. Can view all to find the correct beast.
             #Destroy when redirect? or simply overwrite?
