@@ -1,20 +1,9 @@
 
-
-
 <div class="row justify-content-center">
     <div class="col-12 col-lg-6">
       <div class="card-question">
-        <p>Question <%=  @question.name %> </p>
-        <p> <%=@question.question %> </p>
-
-
-        <!-- <p> </p> -->
-
-
-
-<% %>
-<%= %>
-
+        <p class="q-name">Question <%=  @question.name %> </p>
+        <p class="q-question"> <%=@question.question %> </p>
 
         <%= form_with model: @question, local:true, method: :patch do  %>
           <div class="answers">
@@ -30,20 +19,11 @@
           </div>
         <% end %>
 
-
-
-
-
-
-
-        <%if @question.name == "three" %>
-          <button><%=link_to  "Find my diva beast! #{}", beast_path(Beast.first) %>   </button>
-        <% else %>
-          <button><%=link_to  "next question #{}", question_path(@question.id.next) %>   </button>
-        <% end%>
-
-
-
     </div>
   </div>
 </div>
+
+
+        <!-- <p> </p> -->
+        <!-- <!% %>
+        <!%= %> -->
