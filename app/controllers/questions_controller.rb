@@ -12,7 +12,7 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     @beast = Beast.find(params[:answer])
     @question.update_attribute(:selection, @beast.animal)
-    selection(@beast.animal, @question.name)
+
     if @question == Question.last
       @the_beast = find_the_beast
       redirect_to beast_path(Beast.find_by(animal: @the_beast)), alert: "we saved it!!!"

@@ -5,11 +5,9 @@ Rails.application.routes.draw do
 
   resources :questions, only: [ :index, :show ] do
     resources :answers, only: [ :index ]
-    resources :choices, only: [ :create ]
   end
 
   resources :answers, only: [ :show ]
-  resources :choices, only: [ :index ]
   resources :questions, only: [ :update ]
 
 end
@@ -18,7 +16,5 @@ end
 # beasts - we can see a beast, we can see all beasts
 # questions - we can see a question, we can see all questions, we can update a question
 # answers - we can see an answer, we can see all answers
-# choices - a choice is created for each set of answers. Can view all to find the correct beast.
-            #Destroy when redirect? or simply overwrite?
 
-# the user cannot create, update or destroy, so only index and show routes required, except for choices.
+# the user cannot create, update or destroy, so only index and show routes required.
