@@ -54,15 +54,15 @@
 
 .card-quiz, .card-question {
   height: 60vh;
-  // width: 50vw;
+  width: 50vw;
   color: white;
-  display: flex;
-  justify-content: space-around;
+  //display: flex;
+  //justify-content: space-around;
   text-align: center;
   align-items: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 8px;
-  margin-top: 200px;
+  margin: 200px auto 0;
   padding: 24px;
 }
 
@@ -72,12 +72,14 @@
 
 .card-question {
   background-color: $orange;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   font-size: 2em;
 }
 
 .card-quiz h1 {
   font-family: Nunito;
   font-size: 4em;
+  padding: 40px 20px;
 }
+
 

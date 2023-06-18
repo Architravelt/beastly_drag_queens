@@ -7,4 +7,70 @@
   background-color: $cornflower;
   font-weight: bold;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 12px auto;
+}
+
+.btn-quiz-box:hover {
+  color: $overcast;
+  background-color: $naval;
+}
+
+.nav-btn{
+  color: white;
+  font-family: nunito;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: $cadbury;
+  position: absolute;
+  right: 40px;
+  top: 24px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.nav-btn:hover {
+  color: $overcast;
+  background-color: $indigo;
+}
+
+//hiding default radio styling
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 0.5em;
+  height: 0.5em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+}
+
+input[type="radio"]:checked {
+  color: $teal;
+}
+
+input[type="submit"] {
+  color: white;
+  font-family: nunito;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: $cornflower;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 12px auto;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: $naval;
+  color: $light-gray;
 }

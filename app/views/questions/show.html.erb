@@ -2,19 +2,22 @@
 <div class="row justify-content-center">
     <div class="col-12 col-lg-6">
       <div class="card-question">
-        <p class="q-name">Question <%=  @question.name %> </p>
-        <p class="q-question"> <%=@question.question %> </p>
+        <p class="number">Question <%=  @question.name %> </p>
+        <p class="question"> <%=@question.question %> </p>
 
         <%= form_with model: @question, local:true, method: :patch do  %>
           <div class="answers">
+            <ul class="answer-list">
             <% @question.answers.each do |answer| %>
-              <%= radio_button_tag "answer", "#{answer.beast_id}", false, required: 'required' %>
-              <%= label_tag "#{answer.beast_id}", answer.answer%>
+              <li><%= radio_button_tag "answer", "#{answer.beast_id}", false, required: 'required' %>
+              <%= label_tag "#{answer.beast_id}", answer.answer%></li>
             <% end %>
+            </ul>
             <%if @question.name == "three" %>
             <%= submit_tag "Find my diva beast! #{}"%>
             <% else %>
-            <%= submit_tag "next question #{}"%>
+            <%= submit_tag "Next question #{}"%>
+
             <% end%>
           </div>
         <% end %>

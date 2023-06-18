@@ -16,13 +16,14 @@
   height: 14vh;
   position: fixed;
   top: 25px;
-  background-color: $teal2;
+  background-color: $teal;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
   width: 100%;
+  border: solid $dkgreen 1px;
   box-shadow: 15px 0 rgba(0,0,0,0.2);
 }
 
