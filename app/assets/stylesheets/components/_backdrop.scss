@@ -1,0 +1,18 @@
+.background-one {
+  background: linear-gradient(to bottom right, $teal, $pink);
+}
+
+.background-two {
+  background: linear-gradient(to bottom right, $teal, $pink);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body .background-one{
+  background: linear-gradient(to bottom right, $teal, $pink);
+}
+

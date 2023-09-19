@@ -1,16 +1,3 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background-color: #4FBDBA;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 
 .navbar-queens {
   height: 14vh;
@@ -40,14 +27,40 @@
   // padding-top: 20px;
 }
 
-#nav-logo {
+.nav-queen {
+  height: 14vh;
+  background: transparent;
+  display: block;
+
+}
+
+.nav-queen h3 {
+  font-family: nunito;
+  color: white;
+  font-size: 2em;
+  font-style: italic;
+  margin-left: 32px;
+}
+
+.nav-queen h1 {
   font-family: laila;
   color: $rich;
   margin-left: 15px;
+  font-size: 4em;
+  padding-bottom: 0;
+
+}
+
+#nav-logo {
+  font-family: laila;
+  color: $rich;
+  margin-left: 16px;
   font-size: 2.75rem;
   padding-bottom: 0;
 
 }
+
+
 
 #nav-text {
   font-family: nunito;
@@ -72,4 +85,8 @@
   top: 24px;
   font-weight: bold;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.navbar-fade {
+
 }
