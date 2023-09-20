@@ -34,22 +34,29 @@
 
 }
 
-.nav-queen h3 {
-  font-family: nunito;
-  color: white;
-  font-size: 2em;
-  font-style: italic;
-  margin-left: 32px;
-}
-
 .nav-queen h1 {
   font-family: laila;
-  color: $rich;
+  color: #3E065F;
   margin-left: 15px;
-  font-size: 4em;
+  font-size: 5em;
   padding-bottom: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  text-shadow: $overcast 1px 0 8px;
 
 }
+
+.nav-queen h3 {
+  font-family: laila;
+  color: $blush;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-left: 32px;
+  padding-top: 0;
+  text-shadow: $pasty 1px 0 10px;
+}
+
+
 
 #nav-logo {
   font-family: laila;

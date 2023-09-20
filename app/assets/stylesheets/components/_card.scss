@@ -63,7 +63,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 8px;
   margin: 200px auto 0;
-  padding: 24px;
+  // padding: 24px;
 }
 
 .card-quiz {
@@ -76,10 +76,24 @@
   font-size: 2em;
 }
 
-.card-quiz h1 {
+.card-quiz h1, .card-spinner h1 {
   font-family: Nunito;
-  font-size: 4em;
-  padding: 40px 20px;
+  font-size: 3.8em;
+  // padding: 50px 20px 12px;
+  color: $light-gray;
+  margin: auto;
 }
 
-
+.card-spinner {
+  height:550px;
+  width: 550px;
+  background-color: $shadow;
+  margin: 48px auto;
+  border-radius: 50%;
+  border: double solid black  2px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  padding: 12px
+}
