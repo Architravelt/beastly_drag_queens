@@ -81,7 +81,7 @@
   font-size: 3.8em;
   // padding: 50px 20px 12px;
   color: $light-gray;
-  margin: auto;
+  // margin: auto;
 }
 
 .card-spinner {
@@ -90,10 +90,20 @@
   background-color: $shadow;
   margin: 48px auto;
   border-radius: 50%;
-  border: double solid black  2px;
-  align-items: center;
+  border: 7px solid $black;
   text-align: center;
-  display: block;
+  display: flex;
   justify-content: center;
+  align-items: center;
   padding: 12px
 }
+
+.card-pupil {
+  background-color: $naval;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 2px solid $shadow;
+  margin: auto;
+}
+
