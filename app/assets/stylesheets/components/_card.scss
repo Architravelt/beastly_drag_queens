@@ -63,7 +63,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 8px;
   margin: 200px auto 0;
-  padding: 24px;
+  // padding: 24px;
 }
 
 .card-quiz {
@@ -76,10 +76,61 @@
   font-size: 2em;
 }
 
-.card-quiz h1 {
+.card-quiz h1, .card-spinner h1 {
   font-family: Nunito;
-  font-size: 4em;
-  padding: 40px 20px;
+  font-size: 3.8em;
+  padding: 72px 20px 8px;
+  color: $light-gray;
+  // margin: auto;
 }
 
+.card-spinner {
+  height:550px;
+  width: 550px;
+  background-color: $shadow;
+  margin: 48px auto;
+  // border-radius: 50%;
+  border-radius: 5% 60% 5% 60%;
+  //border: 7px solid $black;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transform: rotate(0.375turn);
+  background: repeating-radial-gradient(
+    $yellow,
+    $yellow 8px,
+    $shadow 8px,
+    $shadow 16px
+  );
+  // overflow: hidden;
+}
 
+.anti-spin {
+  border-radius: 30%;
+  background-color: $shadow;
+  transform: rotate(0.625turn);
+}
+
+.card-pupil {
+  background-color: $naval;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 2px solid $shadow;
+  margin: auto;
+}
+
+.card-home {
+  height: 50vh;
+  width: 40vw;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  margin: 100px auto;
+  text-align: center;
+  align-items: center;
+  padding: 24px;
+
+}
